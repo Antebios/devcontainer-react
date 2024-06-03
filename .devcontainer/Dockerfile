@@ -13,6 +13,8 @@ RUN echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3
   && apt update \
   && apt install -y fish \
   && omf install bobthefish \
-  && set -g theme_powerline_fonts no
+  && apt-get install fonts-powerline \
+  && set -g theme_powerline_fonts no \
+  && set -g theme_nerd_fonts yes
 
 
