@@ -15,6 +15,9 @@ RUN echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3
   && omf install bobthefish \
   && apt-get install fonts-powerline \
   && set -g theme_powerline_fonts no \
-  && set -g theme_nerd_fonts yes
-
+  && set -g theme_nerd_fonts yes \
+  && set -g theme_display_git_ahead_verbose yes \
+  && sset -g theme_display_git_stashed_verbose yes \
+  && sset -g theme_display_git_default_branch yes \
+  && sset -g theme_date_timezone America/Chicago
 
