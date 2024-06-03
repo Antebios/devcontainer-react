@@ -4,9 +4,7 @@
     "service": "vscode",
     "runServices": ["vscode"],
     "shutdownAction": "stopCompose",
-    "postCreateCommand": "source ~/.windows.sh",
     "workspaceFolder": "/workspace",
-    // "overrideCommand": "",
     "extensions": [
         "dbaeumer.vscode-eslint", // ESLint
         "esbenp.prettier-vscode", // Prettier code formatter
@@ -65,10 +63,5 @@
           },
           "prettier-eslint.eslintIntegration": true
     },
-    "forwardPorts": [3000],
-    "portsAttributes": {
-        "3000": {
-	    "visibility": "public"
-	}
-    }
+    "forwardPorts": [3000]
 }
